@@ -20,6 +20,7 @@ module.exports = {
     automagic: false,
   },
   hooks: {
+    // disable: ["copyAssetsToPublic"],
     // disable: ['elderWriteHtmlFileToPublic'], // this is used to disable internal hooks. Uncomment this hook to disabled writing your files during build.
   },
   plugins: {
@@ -34,15 +35,6 @@ module.exports = {
     "@elderjs/plugin-seo-check": {
       display: ["errors", "warnings"], // If the errors are too verbose remove 'warnings'
       //writeLocation: './report.json', // if you want to write a report of errors
-    },
-    "@elderjs/plugin-images": {
-      folders: [
-        {
-          src: "/assets/images/**/*", // glob of where your original images are. Relative to rootDir/process.cwd() defined in your elder.config.js. Careful with **.
-          // src: 'articles/**/*' is also acceptable
-          output: "/assets/images/", // where files should be put within the distDir defined in your elder.config.js.
-        },
-      ],
     },
   },
   shortcodes: { closePattern: "}}", openPattern: "{{" },

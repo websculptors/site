@@ -7,4 +7,4 @@ author: Ryan
 ---
 What is this?! Hello!!!
 
-![](/assets/uploads/hamburger_blt_burger.png)
+![](/assets/images/uploads/hamburger_blt_burger.png)
