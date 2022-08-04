@@ -16,7 +16,10 @@
     "esbuild": "node esbuild",
     "eslint": "eslint --ext .js .",
     "eslint:fix": "eslint --fix --ext .js .",
-    "prettier:svelte": "prettier --write --plugin-search-dir=. ./**/*.svelte"
+    "prettier:svelte": "prettier --write --plugin-search-dir=. ./**/*.svelte",
+    "preview": "run-p dev:rollup preview:tailwind",
+    "preview:tailwind": "postcss src/tailwind.css -o srv/public/style.css -w"
+
   },
   "type": "commonjs",
   "engines": {
