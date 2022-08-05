@@ -15,4 +15,5 @@ fields:
   name: author
   label: author
 pages:
+- src/routes/blog/stinky.md
 - src/routes/blog/the-best-food.md
